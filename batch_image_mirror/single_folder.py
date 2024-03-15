@@ -25,16 +25,10 @@ def flip_images_in_folder(folder_path, output_folder):
 
 #  Main function where python will began execution
 if __name__ == "__main__":
-    # For each folder to be processed:
-    for x in range(0, 38):
-        # Set input and output folder paths
-        # Input folder:
-        input_folder = "razia/" + str(x)
-        # Output folder:
-        output_folder = "newData/" + str(x)
-
-        # Mirror images
-        flip_images_in_folder(input_folder, output_folder)
-
-        # Print status
-        print("Completed folder number ", x)
+    # Set input and output folder paths
+    # Input folder:
+    input_folder = "input_folder"
+    # Output folder:
+    output_folder = "output_folder"
+    # Mirror images
+    flip_images_in_folder(input_folder, output_folder)

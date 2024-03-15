@@ -73,14 +73,9 @@ def resize_images_in_folder(input_folder, output_folder):
 
 
 if __name__ == "__main__":
-    # For each folder to be processed:
-    for x in range(0, 38):
-        # Set input and output folder paths
-        input_folder = "input_images_folder"
-        output_folder = "output_images_folder"
+    # Set input and output folder paths
+    input_folder = "input_images_folder"
+    output_folder = "output_images_folder"
 
-        # Resize images
-        resize_images_in_folder(input_folder, output_folder)
-
-        # Print status
-        print("Completed folder number ", x)
+    # Resize images
+    resize_images_in_folder(input_folder, output_folder)

@@ -17,7 +17,7 @@ def rename_files(folder_path, symbol):
         base_name, extension = os.path.splitext(file_name)
 
         # Create new file name with serial number
-        new_name = f"class_{symbol}_{counter}{extension}"
+        new_name = f"{symbol}-{counter}{extension}"
 
         # Construct full paths
         old_path = os.path.join(folder_path, file_name)
@@ -32,14 +32,11 @@ def rename_files(folder_path, symbol):
 
 # Replace 'folder_path' with the path to your folder containing files
 if __name__ == "__main__":
-    # For each folder to be processed:
-    for x in range(0, 38):
-        # Set input and output folder paths
-        folder_path = "" + str(x)
-        symbol = x
+    # Set input and output folder paths
+    input_folder_path = "input_folder_path"
 
-        # Rename images
-        rename_files(folder_path, symbol)
+    # User set the rename style
+    rename_format = "rename_format"
 
-        # Print status
-        print("Completed folder number ", x)
+    # Rename images
+    rename_files(input_folder_path, rename_format)
